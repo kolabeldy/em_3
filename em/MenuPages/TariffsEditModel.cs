@@ -245,9 +245,9 @@ namespace em.MenuPages
             return Tariff85608 + (1 / H2) * (1 - CondensateReturn / 100) * Tariff85609;
         }
 
-        private MyRelayCommand btnSave_Click;
-        public MyRelayCommand BtnSave_Click => btnSave_Click ??
-                    (btnSave_Click = new MyRelayCommand(obj =>
+        private MyRelayCommand saveCommand;
+        public MyRelayCommand SaveCommand => saveCommand ??
+                    (saveCommand = new MyRelayCommand(obj =>
                     {
                         List<Tariff> tempTariff = new();
                         tempTariff.Add(new Tariff { Id = 950, Tarif = Tariff950 });

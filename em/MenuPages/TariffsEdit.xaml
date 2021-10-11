@@ -5,7 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:em"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-    Height="570"
+    Height="580"
     Width="700"
     FontSize="12"
     mc:Ignorable="d" Title="Тарифы" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
@@ -123,15 +123,14 @@
                     Text="тыс. м3" />
                 <TextBox
                     Grid.Row="2"
-                    Grid.Column="4"
-                    Margin="2"
-                    HorizontalAlignment="Stretch"
-                    VerticalAlignment="Stretch"
+                    Grid.Column="3"
+                    Margin="2,2,2,0"
+                    VerticalAlignment="Top"
                     FontSize="12"
                     FontWeight="Normal"
                     IsReadOnly="{Binding IsNotAdmin}"
                     Text="{Binding Tariff950, StringFormat=\{0:N2\}, Mode=TwoWay}"
-                    TextAlignment="Right" />
+                    TextAlignment="Right" Height="25" />
 
                 <TextBox
                     Grid.Row="3"
@@ -166,7 +165,7 @@
                 <TextBox
                     Grid.Row="3"
                     Grid.Column="4"
-                    Margin="3"
+                    Margin="2"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch"
                     FontSize="12"
